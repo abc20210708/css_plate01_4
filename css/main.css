@@ -221,16 +221,16 @@ section.about {
     padding: 80px 0;
 }
 
-section.about .title {
+section .title {
     text-align: center;
 }
 
-section.about .title h2 {
+section .title h2 {
     font-size: 45px;
     margin-bottom: 5px;
 }
 
-section.about .title p {
+section .title p {
     font-size: 18px;
     color: #555;
 }
@@ -294,4 +294,200 @@ section.about ul li a .text p.more::before {
     position: absolute;
     left: 0;
     top: -5px;
+}
+
+/* section innovation style */
+section.innovation {
+    background: #fff;
+    margin-bottom: 150px;
+}
+
+section.innovation .img-box {
+    width: 74%;
+    height: 540px;
+    margin: 50px auto 0;
+    background: url('../img/product_1.jpg') 
+    no-repeat center/cover;
+    /* position static만 아니면 됨! */
+    position: relative;
+}
+
+section.innovation .img-box .inner {
+    background: #3a3c4e;
+    width: 80%;
+    /* border: 3px solid #000;
+    font-size: 30px; */
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    /* top으로 490px해도 상관없음! */
+    transform: translateX(-50%);    
+}
+
+section.innovation .img-box .inner h3 {
+    background: #fff;
+    font-size: 18px;
+    padding: 25px 45px;
+    box-sizing: border-box;
+}
+
+section.innovation .img-box .inner .bottom {
+    color: #fff;
+    line-height: 1.6;
+    padding: 35px 85px;
+    box-sizing: border-box;
+}
+
+section.innovation .img-box .inner .bottom p {
+    float: left;
+    width: 70%;
+}
+
+section.innovation .img-box .inner .bottom a {
+    float: right;
+    background: orange;
+    border-radius: 50px;
+    padding: 7px 30px;
+}
+
+section.innovation .img-box .inner .bottom a:hover {
+    background: #f86010;
+}
+
+/* section me style */
+section.me {
+    background: url('../img/me.jpg') 
+    no-repeat center/cover;
+    /* height는 지정 x */
+    margin-bottom: 150px;
+    padding: 80px 0;
+}
+
+section.me ul.list {
+    width: 74%;
+    margin: 50px auto;
+    border-top: 2px solid #000;
+    /* 블랙이 기본값이라서 생략이 가능 */
+    border-bottom: 2px solid;
+}
+
+section.me ul.list > li {
+    /* 직속 li 바로 자식
+    후손에게는 안 들어가도록 */
+    padding: 30px 60px;
+}
+
+section.me ul.list > li:first-child {
+    border-bottom: 1px solid #ddd;
+}
+
+section.me ul.list > li h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    /* background: red; */
+    position: relative;
+}
+
+section.me ul.list > li h3 span {
+    color: #ff8342;
+    position: absolute;
+    left: -35px;
+}
+
+section.me ul.list > li p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section.me ul.list > li a.more {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+section.me ul.list > li a.more span {
+    color: #ff8342;
+    margin-right: 3px;
+    font-size: 14px;
+}
+
+section.me ul.in {
+    margin-bottom: 30px;
+
+}
+
+section.me ul.in em {
+    float: left;
+    /* background: orange; */
+    /* 가로를 늘려서 여백을 줌 */
+    width: 12%;
+    font-weight: 700;
+}
+
+section.me ul.in p {
+    float: left;
+    /* background: skyblue; */
+    position: relative;
+}
+
+section.me ul.in p::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ff8342;
+    /* display: block; */
+    position: absolute;
+    left: -40px;
+    top: 10px;
+}
+
+#incruit-btn {
+    width: 280px;
+    background: #ff8342;
+    margin: 0 auto;
+    /* 인라인이라서 마진이랑
+    width가 안 먹힘 */
+    display: block;
+    padding: 10px 0;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* section sns style  */
+section.sns {
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+section.sns ul {
+    width: 74%;
+    /* background: orange; */
+    margin: 50px auto;
+}
+
+section.sns ul li {
+    /* border: 4px solid #000; */
+    /* width: 33.3333%; */
+    width: 32%;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 2%;
+}
+
+section.sns ul li:last-child {
+    margin-right: 0;
+}
+
+section.sns ul li .img-box {
+    /* 액자 */
+    width: 100%;
+    height: 251px;
+    /* background: red; */
+    overflow: hidden;
+}
+
+section.sns ul li .img-box img {
+    width: 100%;
 }
